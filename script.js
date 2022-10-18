@@ -69,9 +69,15 @@ const myGameArea = {
             ctx.strokeStyle = "#a52a2a";
             ctx.font="16px Georgia";
             ctx.fillStyle = "#a52a2a";
+            if (this.timing <= 0){
+              ctx.fillText(`Time is Over!`, 75, 150);
+              ctx.fillText('Better luck next time!',75, 215);
+              restartGame();
+            } if (player.balance <= 0){
             ctx.fillText(`You have lost all your Cash Balance in this cycle`, 75, 150);
             ctx.fillText('Better luck next time!',75, 215);
             restartGame();
+            }
             }
         if (player.balance >= 10000){
             clearInterval(intervalId);
