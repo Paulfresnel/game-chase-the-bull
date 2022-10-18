@@ -1,0 +1,302 @@
+#heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid brown;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:200px;
+    margin-bottom:10px;
+    background-position: top;
+    background-image: url('images/General Resources/header banner/new\ bull\ banner.gif');
+}
+
+H1 {
+    color:white;
+    width:400px;
+    font-size:3.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.stop-audio{
+    background-color: #FDE74C;
+    font-weight: bold;
+    font-size:16px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right:8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 35px;
+    margin-top: 9px;
+}
+
+.stop-audio:hover{
+    background-color: #a52a2a;
+    color:#FDE74C;
+}
+
+.restart-button{
+    padding:15px;
+    background-color:#FDE74C;
+    position:absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 80%;
+    font-size: 16px;
+    margin-top: -50px;
+    border:2px brown solid;
+    font-weight: bold;
+}
+
+.restart-button:hover{
+    background-color:brown;
+    color:white;
+    font-size: 16px ;
+    font-weight: bold;
+    border:3px #FDE74C solid;
+    outline: 2px #a52a2a solid;
+}
+
+#heading p {
+    font-size: 1.3rem;
+    width:500px;
+    color:white;
+}
+
+#left-corner {
+    display: flex;
+    align-items: center;
+}
+
+#about {
+    padding-left:35px;
+    padding-right:35px;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color: brown;
+    color: white;
+    font-size:1.25rem;
+    font-weight: bold;
+    border:2px solid black;
+    outline-offset: 2px;
+    margin-right:15px;
+    outline:2px solid white;
+}
+
+#about:hover{
+    background-color:#FDE74C;
+    color:black;
+    border:2px black solid;
+}
+
+#text-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-bottom:25px;
+    border-bottom: 2px solid brown;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height:800px;
+    border:1px brown solid;
+    background-image: url('images/General Resources/header banner/115.jpg');
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:black;
+}
+#instructions{
+    border:1px solid black;
+    padding-right:45px;
+    padding-left:45px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-right:15px;
+    border: 2px solid brown;
+    outline-offset: 2px;
+    outline: 2px solid brown;
+    width:450px;
+    background-color:rgba(255,255,255,0.9);
+}
+#canvas-container {
+    margin-top:15px;
+}
+
+#instructions img{
+    height:20px;
+}
+
+#canvas {
+    display:none;
+    margin-top:15px;
+}
+
+
+
+#heading img {
+    height:70px;
+}
+
+h2{
+    color:brown;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#conditions{
+    border: 1px solid black;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-left:15px;
+    border: 2px solid brown;
+    outline-offset: 2px;
+    outline: 2px solid brown;
+    width:450px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+li + i {
+    margin-left: 50px;
+}
+
+ul {
+    padding-left:0;
+}
+
+span {
+    color:brown;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+#canvas{
+    margin:0 auto;
+}
+
+li {
+    margin-top:4px;
+    margin-bottom: 4px;
+    list-style:none;
+    font-size: 1.15rem;
+}
+
+#instructions i{
+    margin-right: 5px;
+    margin-left:5px;
+}
+
+#conditions i {
+    margin-right: 5px;
+    margin-left: 10px;
+    padding-top:10px;
+}
+
+#start-game{
+    padding-left: 35px;
+    position:absolute;
+    top:35%;
+    left:44%;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: brown;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 2px solid black;
+    outline-offset: 2px;
+    outline: 2px solid #a52a2a;
+    display:flex;
+    align-content: center;
+    margin:auto;
+}
+
+#start-game:hover {
+    background-color: #FDE74C;
+    color: black;
+    border: 2px black solid;
+}
+
+#flexy {
+    display:flex;
+    width:450px;
+    border:3px #FDE74C solid;
+    outline:3px solid #a52a2a;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+#flexy h2{
+    text-decoration: none;
+    color:#FDE74C;
+    background-color: #a52a2a;
+    border-bottom: solid #FDE74C 2px;
+    padding-bottom: 15px;
+    padding-top:10px;
+    margin-top: 0;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 35px;
+    border-top-left-radius : 15px;
+    border-top-right-radius: 15px;
+}
+
+#flexy-container{
+    height:400px; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-image: url('images/General Resources/header banner/115.jpg');
+    margin-bottom: 15px;
+    border:2px #a52a2a solid;
+}
+
+#flexy a{
+    color:blue;
+    text-decoration: underline;
+}
+
+#flexy a:hover{
+    color:#a52a2a;
+}
+
+#flexy i {
+    margin-right: 15px;
+}
+
+#flexy li {
+    margin-left: 35px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+footer{
+    height:260px;
+    background-image: url('images/General Resources/footer banner/footer\ banner\ v2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
