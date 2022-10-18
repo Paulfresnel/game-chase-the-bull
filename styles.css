@@ -8,7 +8,7 @@
     height:200px;
     margin-bottom:10px;
     background-position: top;
-    background-image: url('images/General Resources/header banner/new\ bull\ banner.gif');
+    background-image: url('./images/General Resources/header banner/new\ bull\ banner.gif');
 }
 
 H1 {
@@ -106,7 +106,7 @@ H1 {
     background-position: center;
     height:800px;
     border:1px brown solid;
-    background-image: url('images/General Resources/header banner/115.jpg');
+    background-image: url('./images/General Resources/header banner/115.jpg');
 }
 
 a{
@@ -270,7 +270,7 @@ li {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    background-image: url('images/General Resources/header banner/115.jpg');
+    background-image: url('./images/General Resources/header banner/115.jpg');
     margin-bottom: 15px;
     border:2px #a52a2a solid;
 }
@@ -296,7 +296,7 @@ li {
 
 footer{
     height:260px;
-    background-image: url('images/General Resources/footer banner/footer\ banner\ v2.jpg');
+    background-image: url('./images/General Resources/footer banner/footer\ banner\ v2.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 } 

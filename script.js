@@ -99,7 +99,7 @@ class Player{
         this.width = 35;
         this.height = 55;
         const img = new Image();
-        img.src = "/images/General Resources/player/business_suit-small-bg-removed.png";
+        img.src = "./images/General Resources/player/business_suit-small-bg-removed.png";
         img.onload = () => {
         this.img = img;
         this.draw();           
@@ -143,7 +143,7 @@ class Scamcoins{
         this.height = 25;
 
         const img2 = new Image();
-        img2.src = "/images/Scam-coins logo/dogecoin small size v2.svg";
+        img2.src = "./images/Scam-coins logo/dogecoin small size v2.svg";
         img2.onload = () => {
             this.img = img2;
             this.draw();
@@ -176,7 +176,7 @@ class Bluechips{
         this.height = 25;
 
         const img3 = new Image();
-        img3.src = "/images/bluechips/btc logo small size.svg";
+        img3.src = "./images/bluechips/btc logo small size.svg";
         img3.onload = () => {
             this.img = img3;
             this.draw();
@@ -209,7 +209,7 @@ class Bluechips2{
         this.height = 25;
 
         const img4 = new Image();
-        img4.src = "/images/bluechips/ethereum logo small size.svg";
+        img4.src = "./images/bluechips/ethereum logo small size.svg";
         img4.onload = () => {
             this.img = img4;
             this.draw();
@@ -241,7 +241,7 @@ class Bear{
         this.height = 40;
 
         const bearImg = new Image();
-        bearImg.src = "/images/General Resources/Bear Obstabcle/bear - transparent.png";
+        bearImg.src = "./images/General Resources/Bear Obstabcle/bear - transparent.png";
         bearImg.onload = () => {
             this.img = bearImg;
             this.draw();
@@ -274,7 +274,7 @@ class RandomEvent{
         this.height = 30;
 
         const randomEventImg = new Image();
-        randomEventImg.src = "/images/General Resources/Random Event/whole gift transparent.png";
+        randomEventImg.src = "./images/General Resources/Random Event/whole gift transparent.png";
         randomEventImg.onload = () => {
             this.img = randomEventImg;
             this.draw();
@@ -466,7 +466,7 @@ function restartGame(){
 }
 
 const background = new Image();
-background.src = '/images/General Resources/Background/medieval arena with white and tribunes.jpg';
+background.src = './images/General Resources/Background/medieval arena with white and tribunes.jpg';
 
 background.onload = ()=>{
     ctx.drawImage(background,0,0);
@@ -505,19 +505,19 @@ function stopAudio(){
 
 
 function bonusAudio(){
-    const positiveAudio = new Audio('/images/General Resources/Audio/on Score +/mixkit-player-boost-recharging-2040.wav');
+    const positiveAudio = new Audio('./images/General Resources/Audio/on Score +/mixkit-player-boost-recharging-2040.wav');
     positiveAudio.volume = 0.1;
     positiveAudio.play();
 }
 
 function negativeAudio(){
-    const negativeAudio = new Audio('/images/General Resources/Audio/on Score - /negative audio to try - trimmed.wav');
+    const negativeAudio = new Audio('./images/General Resources/Audio/on Score - /negative audio to try - trimmed.wav');
     negativeAudio.volume = 0.1;
     negativeAudio.play();
 }
 
 function bearAudio(){
-    const bearAudio = new Audio ('/images/General Resources/Audio/Bear Sound/bear growling.wav');
+    const bearAudio = new Audio ('./images/General Resources/Audio/Bear Sound/bear growling.wav');
     bearAudio.volume = 1;
     bearAudio.play();
 }
