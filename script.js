@@ -243,8 +243,8 @@ class Bear{
     constructor(y){
         this.x = canvas.width;
         this.y = y;
-        this.width = 43;
-        this.height = 40;
+        this.width = 40;
+        this.height = 35;
 
         const bearImg = new Image();
         bearImg.src = "./images/General Resources/Bear Obstabcle/bear - transparent.png";
@@ -358,40 +358,64 @@ let randomEvents = [];
 function updateObstacles() {
     let randomNumber = Math.floor(Math.random() * 1000);
     for (i = 0; i < myObstacles.length; i++) {
+      if (myGameArea.timing > 30){
         myObstacles[i].x += -2;
         myObstacles[i].draw();
+        } if (myGameArea.timing <= 30){
+          myObstacles[i].x += -3;
+          myObstacles[i].draw();
+        }
     }
     for (i=0; i<myBluechips.length; i++){
+      if (myGameArea.timing >30){
         myBluechips[i].x += -2;
         myBluechips[i].draw();
+        } if(myGameArea.timing <= 30){
+          myBluechips[i].x += -3;
+          myBluechips[i].draw();
+        }
     }
     for (i=0;i<bearObstacles.length;i++){
         bearObstacles[i].x += -8;
         bearObstacles[i].draw();
     }
     for(i=0;i<randomEvents.length;i++){
+      if (myGameArea.timing >30){
         randomEvents[i].x += -2;
         randomEvents[i].draw();
+        } if(myGameArea.timing <= 30){
+          randomEvents[i].x += -3;
+          randomEvents[i].draw();
+        }
     }
-    if (randomNumber <= 350 &&  myGameArea.frames % 25 === 0) { // every 1s
+    if (randomNumber <= 350 &&  myGameArea.frames % 20 === 0) { // every 0.5s
       let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
       let points = Math.floor((Math.random() * -750)-150);
       myObstacles.push(new Scamcoins(y, points));//
     }
-    if (randomNumber > 350 && randomNumber < 650 && myGameArea.frames % 50 === 0){ // every 1.9s
+    if (randomNumber > 350 && randomNumber < 650 && myGameArea.frames % 37.5 === 0){ // every 1.9s
         let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
         let points = Math.floor((Math.random() * 300)+150);
         myBluechips.push(new Bluechips(y, points));
     }
-    if (randomNumber >= 650 && myGameArea.frames % 30 === 0){ // every 2.4s
+    if (randomNumber >= 650 && myGameArea.frames % 25 === 0){ // every 2.4s
         let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
         let points = Math.floor((Math.random() * 300)+150);
         myBluechips.push(new Bluechips2(y, points));
     }
     if (myGameArea.frames % 300 === 0){
+      if (myGameArea.timing > 30){
         let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
         bearAudio();
         bearObstacles.push(new Bear(y));
+        }
+        if (myGameArea.timing <= 30){
+           let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
+           let y2 = Math.floor(Math.random() * (190 - 45 + 1) + 95)
+          bearAudio();
+          bearObstacles.push(new Bear(y));
+          bearObstacles.push(new Bear(y2));
+        }
     }
     if(myGameArea.frames % 200 ===0){
         let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
@@ -483,19 +507,19 @@ const backgroundImage = {
   x:0,
   y:0, 
   speed: 1,
-  move: function() {
-    this.x -= this.speed; // controls the vertical movement
-    this.x %= canvas.width; // this is the best way i found to make the image loop and avoid white space in background
-  },
+  //move: function() {
+  //  this.x -= this.speed; // controls the vertical movement
+  //  this.x %= canvas.width; // this is the best way i found to make the image loop and avoid white space in background
+  //},
   draw: function() {
     ctx.drawImage(this.img, this.x, this.y, canvas.width, canvas.height);
-    ctx.drawImage(this.img, this.x + canvas.width, this.y, canvas.width, canvas.height);
+    //ctx.drawImage(this.img, this.x + canvas.width, this.y, canvas.width, canvas.height);
   },
 };
 
 
 function backgroundMoveDraw(){
-    backgroundImage.move();
+    //backgroundImage.move();
     backgroundImage.draw();
 }
 
