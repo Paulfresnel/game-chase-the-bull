@@ -388,12 +388,12 @@ function updateObstacles() {
           randomEvents[i].draw();
         }
     }
-    if (randomNumber <= 350 &&  myGameArea.frames % 20 === 0) { // every 0.5s
+    if (randomNumber <= 350 &&  myGameArea.frames % 15 === 0) { // every 0.5s
       let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
       let points = Math.floor((Math.random() * -750)-150);
       myObstacles.push(new Scamcoins(y, points));//
     }
-    if (randomNumber > 350 && randomNumber < 650 && myGameArea.frames % 37.5 === 0){ // every 1.9s
+    if (randomNumber > 350 && randomNumber < 650 && myGameArea.frames % 50 === 0){ // every 1.9s
         let y = Math.floor(Math.random() * (240 - 45 + 1) + 45);
         let points = Math.floor((Math.random() * 300)+150);
         myBluechips.push(new Bluechips(y, points));
@@ -530,8 +530,10 @@ function stopAudio(){
         mainAudio.muted = true;
         } else if (mainAudio.muted === true){
             mainAudio.muted = false;
+            mainAudio.play();
         }
 }
+
 
 
 function bonusAudio(){
